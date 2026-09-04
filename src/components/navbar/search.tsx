@@ -21,7 +21,6 @@ const Search = styled("div")(({ theme }) => ({
     width: "auto",
   },
 
-  // 🟢 FIX 1: Add focus state styling
   "&:focus-within": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
     boxShadow: `0 0 0 2px ${alpha(theme.palette.primary.main, 0.3)}`,
@@ -53,11 +52,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create("width"),
 
     [theme.breakpoints.up("sm")]: {
-      // 🟢 FIX 2: Increase default width
       width: "20ch",
 
       "&:focus": {
-        // 🟢 FIX 3: Increase width on focus
         width: "30ch",
       },
     },
@@ -90,7 +87,7 @@ export default function SearchAppBar() {
       </SearchIconWrapper>
 
       <StyledInputBase
-        placeholder="Search products or model..."
+        placeholder="Search products..."
         value={searchValue}
         onChange={(event) => setSearchValue(event.target.value)}
         onKeyDown={handleKeyDown}

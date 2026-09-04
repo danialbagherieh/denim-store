@@ -1,9 +1,7 @@
 import { useState } from "react";
-
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-
 import { useNavigate } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
@@ -21,6 +19,13 @@ const Search = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(1),
     width: "auto",
+  },
+
+  // 🟢 FIX 1: Add focus state styling
+  "&:focus-within": {
+    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    boxShadow: `0 0 0 2px ${alpha(theme.palette.primary.main, 0.3)}`,
+    borderRadius: theme.shape.borderRadius,
   },
 }));
 
@@ -48,10 +53,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create("width"),
 
     [theme.breakpoints.up("sm")]: {
-      width: "12ch",
+      // 🟢 FIX 2: Increase default width
+      width: "20ch",
 
       "&:focus": {
-        width: "20ch",
+        // 🟢 FIX 3: Increase width on focus
+        width: "30ch",
       },
     },
   },

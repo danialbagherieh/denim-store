@@ -74,17 +74,32 @@ https://vercel.com/button
 npm run build
 npm run preview
 ---
-Homepage
-https://via.placeholder.com/800x450?text=Homepage+Screenshot
+Home
 
-Product Listing
-https://via.placeholder.com/800x450?text=Product+Listing+Screenshot
+<img width="1909" height="868" alt="Homeone" src="https://github.com/user-attachments/assets/2659116b-7efa-49f0-8432-60755307d2cf" />
 
-Shopping Cart
-https://via.placeholder.com/800x450?text=Shopping+Cart+Screenshot
+
+Shop
+
+<img width="1909" height="869" alt="Shopone" src="https://github.com/user-attachments/assets/832b9491-ab7f-4233-9d30-0acbe6556628" />
+
+<img width="1911" height="861" alt="Shoptwo" src="https://github.com/user-attachments/assets/c11a74d8-3e6f-4486-9cf4-5ddcc07785c9" />
+
+
+Cart
+<img width="1912" height="870" alt="Cartone" src="https://github.com/user-attachments/assets/673028f8-c8af-4393-b06f-457d68ef4ff0" />
+
+
+Checkout
+
+<img width="1911" height="867" alt="Checkoutone" src="https://github.com/user-attachments/assets/e2062554-5572-45f8-802f-cd4e82e00a31" />
+
 
 Mobile View
-https://via.placeholder.com/400x800?text=Mobile+View+Screenshot
+
+<img width="964" height="813" alt="Hometwo" src="https://github.com/user-attachments/assets/63fd32ab-658e-482d-9f0c-db1ee320d715" />
+
+
 ## 📁 Project Structure
 ---
 Author
